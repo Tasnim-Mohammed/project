@@ -1,0 +1,740 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 6500px;
+font-family:"Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.underline{
+    width:60px;
+    height: 4px;
+    margin: auto;
+    background-color:cadetblue;
+    margin-top: -10px;
+}
+.pp{
+    margin: 0px 5%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+/*---------------------------------------------------------------------------header-------------------------------------------------------------------------------------------------*/
+.header{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(31, 48, 70, 1);
+    position: fixed;
+    z-index: 10;
+}
+.header-img{
+    height: 50px;
+    width:80px;
+    margin-left: 70px;
+    float: left;   
+}
+.header-ul{
+    list-style: none;
+    float:right;
+    margin-right: 100px;
+}
+.header-ul li{
+    display: inline-block;
+    font-size: 17PX;
+    position: relative;
+    margin: 15px 0px 0px 19px;
+   
+}
+.header-ul li a{
+    color: rgb(131, 252, 157);
+    cursor: pointer;
+   
+}
+.header-ul .li2::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4px  ;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(131, 252, 157); 
+}
+.header-ul .li2:hover::after{
+    width: 100%;
+    height:4px ;
+    transition: 0.5s;
+    
+}
+.header-ul .li1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px  ;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(131, 252, 157); 
+}
+.header-ul .li1:hover::after{
+    width: 100%;
+    height:4px ;
+    transition: 0s;    
+}
+.li7 div{
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 36px;
+    right: -45px;
+    text-align: center;
+    background-color: rgb(176, 255, 193);  
+    z-index: 20;
+    visibility: hidden;   
+}
+.li7 div p{
+    padding: 12.5px 0px;
+    font-size: 18px;
+}
+.li7:hover div{
+    visibility: visible;
+}
+/*------------------------------------home section---------------------------------------------------------*/
+ .home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-joshsorenson-1714208.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);   
+}
+.home-parent{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title-home{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.p-home{
+    color: white;
+    font-size: 18px;
+    padding:15px 0px ;
+    letter-spacing: 2px;
+}
+.btn-home{
+    padding:15px 23px ;
+    font-size: 15px;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 8px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.btn-home:hover{
+    opacity: 0.7;
+}
+/*------------------------------------------about section-----------------------------------------------------*/
+
+.title-about{
+    text-align: center;
+    text-transform: capitalize;
+    padding:150px 0px 0px 0px;
+    font-size: 37px;
+}
+.parent-home{
+    overflow: auto;
+}
+.about{
+    width: 30%;
+    height:230px;
+    float: left;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgba(31, 48, 70, 0.993);
+    position: relative;
+}
+.about i{
+    color: rgb(135, 170, 245);
+    font-size:27px ;
+    padding: 17px 0px;
+}
+.about p{
+    letter-spacing: 2px;
+    padding: 17px 30px;
+    font-size: 18px;
+    color: rgb(141, 141, 141);
+}
+.about a{
+    font-size: 18px;
+    color:  rgb(135, 170, 245);
+}
+.about div{
+    position: absolute;
+    z-index: 5;
+}
+.about:hover  h2{
+    color: white;
+}
+.about::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0  ;
+    top: 0;
+    left: 0;
+    background-color: black; 
+    opacity: 0.8;
+}
+.about:hover::after{
+    width: 100%;
+    height:100% ;
+    transition: 1s;    
+}
+/*--------------------------------------------------featured section-------------------------------------------------------------*/
+
+.featured-body{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(238, 236, 236);
+    margin-top: 260px;
+    
+}
+.title-featured{
+    text-align: center;
+    text-transform: capitalize;
+    padding:110px 0px 0px 0px;
+    font-size: 37px;
+}
+.parent-featured{
+    width: 30%;
+    height: 325px;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+}
+.parent-featured img{
+    margin: auto;
+    width: 88%;
+    height: 87.8%;
+    margin-top: 6%;
+}
+.overlay-featured{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   visibility: hidden;
+}   
+.parent-featured:hover .overlay-featured{
+    visibility: visible;
+} 
+.overlay-featured h2{
+    color: rgb(176, 255, 193) ;
+    padding-top: 100px;
+}
+.overlay-featured p{
+    color: white;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+.overlay-featured a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(176, 255, 193) ;
+}
+.overlay-featured a i{
+    display:inline-block;
+    line-height: 40px;
+    font-size:20px ;    
+}
+/*------------------------------------------------offer section----------------------------------------------------------------*/
+.parent-offer{
+    overflow: auto;
+}
+.offer{
+    width: 30%;
+    height:200px;
+    float: left;
+    background-color: white;
+    border: 1px solid rgba(31, 48, 70, 0.993);
+    position: relative;
+    margin-bottom: 20px;
+}
+.offer i{
+    color: rgb(135, 170, 245);
+    font-size:27px ;
+    padding: 30px 16px 5px 25px;
+}
+.ff i{
+    padding: 30px 10px 5px 25px;
+}
+.offer h2{
+    display: inline;
+}
+.offer p{
+    letter-spacing: 2px;
+    padding: 5px 0px 0px 73px  ;
+    font-size: 18px;
+    color: rgb(141, 141, 141);
+}
+.offer div{
+    position: absolute;
+    z-index: 5;
+}
+.offer:hover  h2{
+    color: white;
+}
+.offer::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0  ;
+    top: 0;
+    left: 0;
+    background-color: black; 
+    opacity: 0.8;
+}
+.offer:hover::after{
+    width: 100%;
+    height:100% ;
+    transition: 1s;    
+}
+/*---------------------------------------------------choose us section-------------------------------------------------------*/
+.parent-choose{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(238, 236, 236) ;
+}
+.img-choose{
+    margin-top: 100px;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.info-choose{
+    margin-top: 100px;
+    padding-left: 10%;
+    width: 50%;
+    height: 100%;
+    float: left;    
+}
+.underline-choose{
+    width:60px;
+    height: 4px;
+    background-color: cadetblue;
+    margin-top: 10px;
+}
+.title-choose{
+    font-size: 37px;
+    text-transform: capitalize;
+}
+.img-choose i{
+    padding: 20px 5px;
+    color: grey;
+    font-size: 12px;
+
+}
+.img-choose .i1{
+    color:  rgb(135, 170, 245);
+}
+ .info-choose p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+ }
+ .info-choose i{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    color:rgb(59, 255, 102);
+ }
+ .info-choose span{ font-size: 20px; }
+
+ /*--------------------------------------------------rate section----------------------------------------------------------*/
+.parent-rate{
+   width: 100%;
+   height: 300px;
+   background-image: url(../images/5f704379453eb.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+}
+.rate{
+    float: left;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+}
+.rate i{
+    font-size: 27px;
+    color:  rgb(135, 170, 245);
+    padding-top: 30%;
+}
+.rate p,.rate h2{
+    font-size: 20px;
+    color: white;
+}
+.rate h2{padding: 5px 0px;}
+/*--------------------------------------------------pricing-----------------------------------------------------------*/
+.parent-pricing{
+    width: 100%;
+    height: 700px;
+    background-color:rgb(238, 236, 236) ;
+}
+
+.title-pricing{
+    text-align: center;
+    text-transform: capitalize;
+    padding:110px 0px 20px 0px;
+    font-size: 37px;
+}
+.price{
+    width: 30%;
+    height:390px ;
+    text-align: center;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    float: left;
+    position: relative;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(19, 76, 109);
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: white;
+}
+.price::after{
+    position: absolute; 
+    content: "";
+    width:100%;
+    height: 0  ;
+    top: 0;
+    left: 0;
+    background-color: black; 
+    opacity: 0.5;
+}
+.price:hover::after{
+    width: 100%;
+    height:100% ;
+    transition: 1s;
+   
+}
+.price button{
+    width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    border: 2px solid rgb(19, 76, 109);
+    border-radius: 5px;
+    font-size: 14px;
+}
+.price h2{
+    padding-top: 30px;
+}
+.price .p1{
+    padding-top: 20px ;
+    color:  rgb(97, 96, 96); 
+    font-size: 18px;
+}
+.circle p{ font-weight: bold ;}
+.circle .pc{  font-size: 33px;}
+
+.price:hover .circle p{
+    color: rgb(0, 219, 48);
+    transition: 0.9s;
+}
+.price:hover h2{
+    color: rgb(0, 219, 48);
+}
+/*---------------------------------------------------testimonial section--------------------------------------------------------------*/
+.parent-testimonial{
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/unnamed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+ }
+ .testimonial{
+    width: 30%;
+    height: 100%;
+    float: left;
+    
+ }
+ .side{
+    width: 20%;
+    height: 100%;
+    float: left;
+ }
+ 
+
+.testimonial img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+  margin: 80px 0px  10px 0px;
+  
+}
+.testimonial div{
+    float: right;
+}
+.testimonial h2{    
+    color: white;    
+}
+.testimonial .p1{
+    color: rgb(6, 243, 144);
+}
+.testimonial .p2{
+    color:white;   
+}
+.testimonial div{
+   margin-right: 150px;
+   margin-top: 80px;
+}
+/*-----------------------------------------------------team section-----------------------------------------------------*/
+.title-team{
+    text-align: center;
+    text-transform: capitalize;
+    padding:110px 0px 20px 0px;
+    font-size: 37px;
+}
+.parent-team{
+    overflow: auto;
+}
+.team{
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    background-color:rgb(196, 195, 195); 
+    padding: 18px 14px;
+    float: left;
+    position: relative;
+}
+.img{
+    width: 90%;
+    height:170px ;
+    margin: auto;
+    position: relative;
+}
+.img img{
+width: 100%;
+height: 100%;}
+
+.team-overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.4);
+top: 0;
+left: 0;
+visibility: hidden;
+}
+.team:hover .team-overlay{
+    visibility: visible;
+}
+
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(97, 154, 240);
+    color: white;
+    margin-left: auto;
+}
+.team-overlay a i{
+    line-height: 40px;
+}
+.team-info h2{
+    padding: 15px 0px;
+}
+
+.team-info p{
+    text-transform: uppercase;
+    color: rgb(66, 66, 66);
+}
+.team:hover .team-info p{
+    color: blue;
+}
+.team:hover .team-info h2{
+    color:white;
+}
+
+.team::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0  ;
+    top: 0;
+    left: 0;
+    background-color: black; 
+    opacity: 0.3;
+}
+.team:hover::after{
+    width: 100%;
+    height:100% ;
+    transition: 1s;    
+}
+/*------------------------------------------------top students--------------------------------------------------------------------*/
+.title-top{
+    text-align: center;
+    text-transform: capitalize;
+    padding:110px 0px 20px 0px;
+    font-size: 37px;
+}
+.top-info p i,.body a{
+    color: cornflowerblue;
+}
+.top-info p{
+    display: inline-block;
+    margin: 25px 5px 0px 0px;
+}
+.parent-top{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(241, 241, 241);
+}
+.top{
+    width: 30%;
+    height: 650px;
+    background-color: white;
+    float: left;
+    position: relative;
+}
+
+.body{
+    width: 60%;
+    margin: auto;
+}
+.body img{ 
+    width: 100%;
+}
+.body .t1,.body .p1{
+    padding: 15px 0px;
+    word-spacing: 3px;
+}
+.body .p1{
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    color: rgb(97, 96, 96);
+}
+.top::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0  ;
+    top: 0;
+    left: 0;
+    background-color: black; 
+    opacity: 0.3;
+}
+.top:hover::after{
+    width: 100%;
+    height:100% ;
+    transition: 1s;    
+}  
+/*----------------------------------------------------------footer section--------------------------------------------------------------*/
+.footer{
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height:300px ;
+}
+.contact-info{
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+}
+.footer img{
+    width: 150px;
+    height: 80px;
+    display: block;
+    margin: auto;
+    margin-bottom:20px ;
+}
+.footer a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(97, 154, 240) ; 
+    color: white; 
+    position: relative;
+}
+.footer a i{
+    line-height: 40px;
+}
+.footer p{
+    margin-top: 20px;
+    color: rgb(126, 125, 125);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer a:hover{
+    background-color: rgb(0, 96, 160);
+    /* transition: 0.5s; */
+}
+
+.footer a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 96, 160); 
+    border-radius: 5px;
+    opacity:1;
+}
+.footer a:hover::after{
+    width: 100%;
+    height:100% ;
+    opacity: 0;
+    transition: 0.3s;    
+}  
+.footer a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0  ;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 96, 160); 
+    border-radius: 5px;
+    opacity:1;
+}
+.footer a:hover::before{
+    width: 100%;
+    height:100% ;
+    opacity: 0;
+    transition: 0.3s;    
+} 
+
+
+
+
+
